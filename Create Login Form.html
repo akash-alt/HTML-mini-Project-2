@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chraset="UTF-8">
+        <title>Intro to html form</form></title>
+        
+        <style>
+            #register-form {
+                width: 300px;
+                background-color: white;
+                padding: 24px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .input-lable{
+                margin: 0px;
+                margin-bottom: 4px;
+                margin-top: 12px;
+            }
+            .input-item{
+                width: 100%;
+            }
+            #terms-check{
+                margin-top: 12px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(31, 187, 187);">
+        <h1 style ="text-align:center">Signup</h1><!--important point-->
+        <form id="register-form">
+            <div>
+                <p class="input-lable">Full Name</p>
+                <input class = "input-item" type="text" name="Full-Name">
+            </div>
+                 <p class="input-lable">Email</p> 
+            <input class = "input-item" type="email" name="email">
+            
+            <div> 
+                <p class="input-lable">Password</p> 
+                <Input class = "input-item" type="Password"
+                name="password">
+            </div>
+            <div> 
+                <p class="input-lable">Confirm Password</p> 
+                 <Input class = "input-item" type="Confirm Password"
+                 name="Confirm password">
+             </div>
+             <div>
+                 <p class="input-lable">Gender</p>
+                 <input  type="radio" name="male" value="male">
+                 Male </input>
+                 <input type="radio" name="Female" value="Female">
+                 Female </input>
+                 <input type="radio" name="Other" value="Other">
+                 Other </input>
+                </div>
+                <div>
+                    <p class="input-lable">Security Question</p>
+                    <select class = "input-item" name="security-question">
+                        <option value="school-name">What is your school name?</option>
+                        <option value="first-company-namr">What is your first company name?</option>
+                        <option value="nick-name">What is your nick name?</option>
+                    </select>
+                </div>
+             </div>
+             <div>
+                 <textarea name="answer" rows="6" cols="30"></textarea>
+             </div>
+             <div>
+                 <input id = "terms-check" type="checkbox" name="terms-conditions" value="accept">
+                 i agree to acceptterms and terms-conditions
+             </div>
+             <input type="submit" value="register">
+        </form>
+    </body>
+</html>
